@@ -29,6 +29,10 @@
   list-style: none;
 }
 
+.header__links-list-item_no-bullit {
+  text-decoration: none;
+}
+
 .header__links-list-item {
   list-style: none;
   list-style-type: circle;
@@ -65,10 +69,7 @@
 }
 
 .cover {
-  background-image: url(../images/cover.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: url(../images/cover.jpg) no-repeat center / cover;
   position: relative;
   width: 1100px;
   height: 757px;
@@ -94,13 +95,12 @@
   font-weight: 700;
 }
 
-  /*о */
+/*о */
 .aligned-text {
   text-align: start;
   letter-spacing: 0.3em;
   line-height: 115%;
   margin-top: 10px;
-
 }
 
 /*но
@@ -111,7 +111,7 @@
   letter-spacing: 0.6em;
 }
 
-  /*те*/
+/*те*/
 .aligned-text_center {
   text-align: center;
   letter-spacing: 0.3em;
@@ -157,13 +157,13 @@
   margin-left: 80px;
 }
 
- /* заголовок секции*/
+/* заголовок секции*/
 .lots__heading {
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
   color: #000;
-  padding: 178px 0 27px 65px
+  padding: 178px 0 27px 65px;
 }
 
 /*список карточек*/
@@ -174,18 +174,18 @@
   justify-content: center;
 }
 
- /* пункт списка карточки*/
+/* пункт списка карточки*/
 .lots__card-list-item {
   text-decoration: none;
   list-style-type: none;
 }
 
- /*ссылка, обрамляющая карточку*/
+/*ссылка, обрамляющая карточку*/
 .card-link {
   display: block;
   text-decoration: none;
-  height: 563px;
-  list-style-type: none;
+  min-height: 563px;
+  height: 100%;
 }
 
 .card {
@@ -194,31 +194,31 @@
   justify-content: space-between;
   position: relative;
   width: 334px;
-}
-
-.card_anderson {
   height: 100%;
-  background-image: url(../images/card-lot-01.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 51px 40px 48px;
+  line-height: 1.2;
+}
+
+.card_type_anderson {
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 /*заголовок карточки*/
 .card__title {
-  padding: 50px 39px 0;
   font-weight: 700;
   font-size: 22px;
-  line-height: 120%;
   text-decoration: underline;
   text-transform: uppercase;
-  text-decoration-skip-ink: none;
+  text-decoration-thickness: 1px;
   color: #fff;
   z-index: 1;
+  text-underline-offset: 3.5px;
 }
 
 .card__text_anderson {
-  padding: 241px 39px 69px;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
@@ -226,17 +226,11 @@
   z-index: 1;
 }
 
-.card_djois {
-
-  height: 100%;
+.card_type_djois {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card__text_djois {
-  padding: 0 39px 66px;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
@@ -244,12 +238,8 @@
   z-index: 1;
 }
 
-.card-kandinskii {
-  height: 100%;
+.card_type_kandinskii {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card__text_kandinskii {
@@ -257,7 +247,6 @@
   font-size: 20px;
   line-height: 120%;
   color: #fff;
-  padding: 0 40px 50px 40px;
   z-index: 1;
 }
 
